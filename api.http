@@ -5,6 +5,20 @@ POST  http://localhost:4000/api/v1/auth/register
 Content-Type: application/json
 
 {
-    "email":"quyquy@gmail.com",
-    "password":"1234568"
+    "email":"binhquy4@gmail.com",
+    "password":"121212"
 }
+
+
+###
+POST  http://localhost:4000/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "email":"binhquy2@gmail.com",
+    "password":"121212"
+}
+
+###
+GET http://localhost:4000/api/v1/user/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywicGFzc3dvcmQiOiIkMmEkMTAkRkZNdERUcmJaSEU5ZndOb3Q0ejJsLjBuS3hTS3g1eVZHUEF3OXRyYzh2S21iUHdpa3JYZ2UiLCJyb2xlX2NvZGUiOiJSMSIsImlhdCI6MTcxOTI4ODgyOCwiZXhwIjoxNzE5NzIwODI4fQ.9fHAzDRQlVk9fCetb95fVfXB_2qSpVn8wzkRoXwG_yo
