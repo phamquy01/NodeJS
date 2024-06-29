@@ -22,3 +22,10 @@ Content-Type: application/json
 ###
 GET http://localhost:4000/api/v1/user/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywicGFzc3dvcmQiOiIkMmEkMTAkRkZNdERUcmJaSEU5ZndOb3Q0ejJsLjBuS3hTS3g1eVZHUEF3OXRyYzh2S21iUHdpa3JYZ2UiLCJyb2xlX2NvZGUiOiJSMSIsImlhdCI6MTcxOTMxMTE0OSwiZXhwIjoxNzE5NzQzMTQ5fQ.UDPUdfGqNelFw8XGP2Qxf8p1pM6MQ9i47Z_fz3WGXJM
+
+###
+GET http://localhost:4000/api/v1/insert/
+
+
+###
+GET http://localhost:4000/api/v1/book?available[]=5&available[]=10
