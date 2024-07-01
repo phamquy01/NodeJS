@@ -1,7 +1,7 @@
 import db from "../models/index";
 import data from "../../data/data.json";
 import { generateCode } from "../helpers/fn";
-export const insertData = (userId) =>
+export const insertData = () =>
   new Promise(async (resolve, reject) => {
     try {
       const categories = Object.keys(data);
@@ -26,7 +26,6 @@ export const insertData = (userId) =>
           });
         });
       });
-      console.log(books);
       resolve("ok");
     } catch (error) {
       reject(error);

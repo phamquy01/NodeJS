@@ -6,9 +6,9 @@ export const isAdmin = (req, res, next) => {
   next();
 };
 
-export const isModerator = (req, res, next) => {
+export const isCreatedOrAdmin = (req, res, next) => {
   const { role_code } = req.user;
   if (role_code !== "R1" && role_code !== "R2")
-    return notAuth("you need permission is admin or moderator", res);
+    return notAuth("you need permission is admin or creator", res);
   next();
 };
